@@ -42,6 +42,12 @@ extern SceUChar8 _binary_res_toggle_on_png_start;
 extern SceUChar8 _binary_res_radio_button_checked_png_start;
 extern SceUChar8 _binary_res_radio_button_unchecked_png_start;
 
+vita2d_texture *icon_dir, *icon_file, *icon_audio, *battery_20, *battery_20_charging, *battery_30, *battery_30_charging, *battery_50, *battery_50_charging, \
+    *battery_60, *battery_60_charging, *battery_80, *battery_80_charging, *battery_90, *battery_90_charging, *battery_full, *battery_full_charging, \
+    *battery_low, *battery_unknown, *default_artwork, *default_artwork_blur, *btn_play, *btn_pause, *btn_rewind, *btn_forward, *btn_repeat, \
+    *btn_shuffle, *btn_repeat_overlay, *btn_shuffle_overlay, *icon_back, *toggle_on, *toggle_off, *radio_on, *radio_off;
+
+
 static vita2d_texture *Texture_LoadImageBilinear(SceUChar8 *buffer) {
 	vita2d_texture *texture = vita2d_load_PNG_buffer(buffer);
 	vita2d_texture_set_filters(texture, SCE_GXM_TEXTURE_FILTER_LINEAR, SCE_GXM_TEXTURE_FILTER_LINEAR);

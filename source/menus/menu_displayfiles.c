@@ -34,7 +34,7 @@ static void Menu_HandleControls(void) {
 
 void Menu_DisplayFiles(void) {
 	Dirbrowse_PopulateFiles(SCE_FALSE);
-	vita2d_set_clear_color(RGBA8(250, 250, 250, 255));
+	vita2d_set_clear_color(RGBA8(80, 63, 63, 255));
 
 	while (SCE_TRUE) {
 		vita2d_start_drawing();

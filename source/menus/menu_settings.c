@@ -38,9 +38,9 @@ static void Menu_DisplayDeviceSettings(void) {
 
 			if (selection < FILES_PER_PAGE || i > (selection - FILES_PER_PAGE)) {
 				if (i == selection)
-					vita2d_draw_rectangle(0, 112 + (72 * printed), 960, 72, RGBA8(230, 230, 230, 255));
+					vita2d_draw_rectangle(0, 112 + (72 * printed), 960, 72, RGBA8(40, 40, 40, 255));
 
-				vita2d_font_draw_text(font, 30, 120 + (72 / 2) + (72 * printed), RGBA8(51, 51, 51, 255), 25, menu_items[i]);
+				vita2d_font_draw_text(font, 30, 120 + (72 / 2) + (72 * printed), RGBA8(231, 231, 231, 255), 25, menu_items[i]);
 
 				printed++;
 			}
@@ -72,7 +72,7 @@ static void Menu_DisplayDeviceSettings(void) {
 				Config_Save(config);
 				strcpy(root_path, menu_items[config.device]);
 				strcpy(cwd, root_path);
-				sceIoRemove("ux0:data/ElevenMPV/lastdir.txt");
+				sceIoRemove("ux0:data/ElevenMPT/lastdir.txt");
 				Dirbrowse_PopulateFiles(SCE_TRUE);
 			}
 		}
@@ -108,9 +108,9 @@ static void Menu_DisplaySortSettings(void) {
 
 			if (selection < FILES_PER_PAGE || i > (selection - FILES_PER_PAGE)) {
 				if (i == selection)
-					vita2d_draw_rectangle(0, 112 + (72 * printed), 960, 72, RGBA8(230, 230, 230, 255));
+					vita2d_draw_rectangle(0, 112 + (72 * printed), 960, 72, RGBA8(40, 40, 40, 255));
 
-				vita2d_font_draw_text(font, 30, 120 + (72 / 2) + (72 * printed), RGBA8(51, 51, 51, 255), 25, menu_items[i]);
+				vita2d_font_draw_text(font, 30, 120 + (72 / 2) + (72 * printed), RGBA8(231, 231, 231, 255), 25, menu_items[i]);
 
 				printed++;
 			}
@@ -173,9 +173,9 @@ static void Menu_DisplayMetadataSettings(void) {
 
 			if (selection < FILES_PER_PAGE || i > (selection - FILES_PER_PAGE)) {
 				if (i == selection)
-					vita2d_draw_rectangle(0, 112 + (72 * printed), 960, 72, RGBA8(230, 230, 230, 255));
+					vita2d_draw_rectangle(0, 112 + (72 * printed), 960, 72, RGBA8(40, 40, 40, 255));
 
-				vita2d_font_draw_text(font, 30, 120 + (72 / 2) + (72 * printed), RGBA8(51, 51, 51, 255), 25, menu_items[i]);
+				vita2d_font_draw_text(font, 30, 120 + (72 / 2) + (72 * printed), RGBA8(231, 231, 231, 255), 25, menu_items[i]);
 
 				printed++;
 			}
@@ -250,9 +250,9 @@ static void Menu_DisplayALCModeSettings(void) {
 
 			if (selection < FILES_PER_PAGE || i > (selection - FILES_PER_PAGE)) {
 				if (i == selection)
-					vita2d_draw_rectangle(0, 112 + (72 * printed), 960, 72, RGBA8(230, 230, 230, 255));
+					vita2d_draw_rectangle(0, 112 + (72 * printed), 960, 72, RGBA8(40, 40, 40, 255));
 
-				vita2d_font_draw_text(font, 30, 120 + (72 / 2) + (72 * printed), RGBA8(51, 51, 51, 255), 25, menu_items[i]);
+				vita2d_font_draw_text(font, 30, 120 + (72 / 2) + (72 * printed), RGBA8(231, 231, 231, 255), 25, menu_items[i]);
 
 				printed++;
 			}
@@ -314,9 +314,9 @@ void Menu_DisplaySettings(void) {
 
 			if (selection < FILES_PER_PAGE || i > (selection - FILES_PER_PAGE)) {
 				if (i == selection)
-					vita2d_draw_rectangle(0, 112 + (72 * printed), 960, 72, RGBA8(230, 230, 230, 255));
+					vita2d_draw_rectangle(0, 112 + (72 * printed), 960, 72, RGBA8(40, 40, 40, 255));
 
-				vita2d_font_draw_text(font, 30, 120 + (72 / 2) + (72 * printed), RGBA8(51, 51, 51, 255), 25, menu_items[i]);
+				vita2d_font_draw_text(font, 30, 120 + (72 / 2) + (72 * printed), RGBA8(231, 231, 231, 255), 25, menu_items[i]);
 
 				printed++;
 			}

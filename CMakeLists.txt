@@ -11,8 +11,8 @@ endif()
 project(ElevenMPV)
 include("${VITASDK}/share/vita.cmake" REQUIRED)
 
-set(VITA_APP_NAME "Eleven Music Player")
-set(VITA_TITLEID  "ELEVENMPV")
+set(VITA_APP_NAME "Evelen Music Player Test2")
+set(VITA_TITLEID  "EVELENMPZ")
 set(VITA_VERSION  "02.10")
 
 set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -O3 -Wall -Werror")
@@ -118,5 +118,5 @@ vita_create_vpk(${PROJECT_NAME}.vpk ${VITA_TITLEID} ${PROJECT_NAME}.self
   FILE sce_sys/livearea/contents/bg.png sce_sys/livearea/contents/bg.png
   FILE sce_sys/livearea/contents/startup.png sce_sys/livearea/contents/startup.png
   FILE sce_sys/livearea/contents/template.xml sce_sys/livearea/contents/template.xml
-  FILE res/Roboto-Regular.ttf Roboto-Regular.ttf
+  FILE res/DotGothic16-Regular.ttf DotGothic16-Regular.ttf
 )
